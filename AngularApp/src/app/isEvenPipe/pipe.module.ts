@@ -1,16 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { isEvenPipe } from '../isEvenPipe/isEven.pipe';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    isEvenPipe
   ],
   imports: [
     BrowserModule
   ],
+  exports: [isEvenPipe],
   providers: [],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class PipeModule { }
